@@ -4,6 +4,14 @@ import (
 	"math"
 )
 
+func bitStringToDec(bitString string) int {
+	var tmpArray []int
+	for _, bitStr := range bitString {
+		tmpArray = append(tmpArray, int(bitStr-'0'))
+	}
+	return convertBitArrayToDec(tmpArray)
+}
+
 // We could use some package to do this, but where's the fun in that?
 func convertBitArrayToDec(bitArray []int) int {
 	result := 0
@@ -29,5 +37,6 @@ func invertBitArray(bitArray []int) []int {
 }
 
 func main() {
-	first_part()
+	firstPart()
+	secondPart()
 }

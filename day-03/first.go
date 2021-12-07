@@ -7,7 +7,9 @@ import (
 	"os"
 )
 
-func first_part() {
+func firstPart() {
+	fmt.Println("===================")
+	fmt.Println("Running first part")
 	f, err := os.Open("input")
 	if err != nil {
 		log.Fatal(err)
@@ -68,12 +70,7 @@ func first_part() {
 	gamma := convertBitArrayToDec(mostCommonBits)
 	epsilon := convertBitArrayToDec(invertBitArray(mostCommonBits))
 
-	fmt.Println("gamma")
-	fmt.Println(gamma)
-
-	fmt.Println("epsilon")
-	fmt.Println(epsilon)
-
-	fmt.Println("gamma * epsilon")
-	fmt.Println(gamma * epsilon)
+	fmt.Println("gamma", gamma)
+	fmt.Println("epsilon", epsilon)
+	fmt.Println("gamma * epsilon", gamma*epsilon)
 }

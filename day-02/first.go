@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func first_part() {
+func firstPart() {
 	fmt.Println("Starting part 1")
 	f, err := os.Open("input")
 	if err != nil {

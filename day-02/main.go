@@ -12,7 +12,7 @@ var joystick = map[string][]int{
 }
 
 func main() {
-	first_part()
+	firstPart()
 
-	second_part()
+	secondPart()
 }
