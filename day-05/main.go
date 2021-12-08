@@ -53,4 +53,5 @@ func readInput() (lines []ventLine) {
 func main() {
 	ventLines := readInput()
 	firstPart(ventLines)
+	secondPart(ventLines)
 }
