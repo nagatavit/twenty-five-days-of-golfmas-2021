@@ -15,6 +15,7 @@ type Cell struct {
 }
 
 type Board struct {
+	Bingo bool
 	Cells [5][5]Cell
 }
 
