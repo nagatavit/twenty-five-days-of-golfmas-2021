@@ -39,6 +39,10 @@ func markCoordinatesFromPerpendicularLines(begin, finish coordinate) (marked []c
 }
 
 func firstPart(lines []ventLine) {
+	fmt.Println("===================")
+	fmt.Println("Starting first part")
+	fmt.Println("===================")
+
 	filledLines := make(map[coordinate]int)
 
 	for _, line := range lines {
