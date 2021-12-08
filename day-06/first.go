@@ -18,5 +18,6 @@ func firstPart(initialFish []fish) {
 			}
 		}
 	}
+
 	fmt.Println("shoal", len(initialFish))
 }
