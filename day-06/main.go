@@ -23,7 +23,7 @@ func (fish *fish) AnotherDayPassesBy() (newborn bool) {
 }
 
 func readInput() (initialFish []fish) {
-	f, err := os.Open("example-input")
+	f, err := os.Open("input")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -50,5 +50,9 @@ func readInput() (initialFish []fish) {
 func main() {
 	initialFish := readInput()
 	firstPart(initialFish)
+
+	// Reset the initial condition as we changed the values in the
+	// first part by using the AnotherDayPassesBy method
+	initialFish = readInput()
 	secondPart(initialFish)
 }
