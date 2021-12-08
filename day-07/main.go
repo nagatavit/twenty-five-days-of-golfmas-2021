@@ -39,4 +39,5 @@ func readInput() (crabsPosition []int) {
 func main() {
 	crabsInitialPosition := readInput()
 	firstPart(crabsInitialPosition)
+	secondPart(crabsInitialPosition)
 }
