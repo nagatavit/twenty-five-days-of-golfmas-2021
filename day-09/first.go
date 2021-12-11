@@ -31,7 +31,7 @@ func getSides(i, j int, heightmap *[][]int) (top, right, bottom, left int) {
 		right = (*heightmap)[i][j+1]
 	}
 
-	if i+1 > len((*heightmap)[0])-1 {
+	if i+1 > len(*heightmap)-1 {
 		bottom = -1
 	} else {
 		bottom = (*heightmap)[i+1][j]
