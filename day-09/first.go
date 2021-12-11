@@ -46,6 +46,10 @@ func getSides(i, j int, heightmap *[][]int) (top, right, bottom, left int) {
 }
 
 func firstPart(heightmap [][]int) {
+	fmt.Println("===================")
+	fmt.Println("Starting first part")
+	fmt.Println("===================")
+
 	riskLevel := 0
 
 	for i, line := range heightmap {
