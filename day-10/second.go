@@ -53,7 +53,5 @@ func secondPart(navigationSubsystem [][]string) {
 
 	sort.Ints(autocompleteScores)
 
-	fmt.Println(autocompleteScores)
-
 	fmt.Println(autocompleteScores[len(autocompleteScores)/2])
 }
