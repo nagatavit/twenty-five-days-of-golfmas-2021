@@ -39,4 +39,5 @@ func readInput() (heightmap [][]int) {
 func main() {
 	heightmap := readInput()
 	firstPart(heightmap)
+	secondPart(heightmap)
 }
