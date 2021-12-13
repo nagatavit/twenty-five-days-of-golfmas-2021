@@ -25,9 +25,8 @@ func findPossiblePaths(depth int, currentCave *cave) (pathsFound [][]string) {
 
 	currentCave.hasBeenVisited = true
 
+	depth++
 	for i := range currentCave.connections {
-		depth++
-
 		newPaths = findPossiblePaths(depth, currentCave.connections[i])
 		if newPaths == nil {
 			continue
