@@ -86,4 +86,6 @@ func main() {
 
 	cavesListing := readInput()
 	firstPart(cavesListing)
+
+	secondPart(cavesListing)
 }
