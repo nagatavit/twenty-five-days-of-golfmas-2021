@@ -8,8 +8,12 @@ import (
 	"strconv"
 )
 
-func main() {
-	f, err := os.Open("../input")
+func secondPart() {
+	fmt.Println("====================")
+	fmt.Println("Starting second part")
+	fmt.Println("====================")
+
+	f, err := os.Open("input")
 	if err != nil {
 		log.Fatal(err)
 	}
