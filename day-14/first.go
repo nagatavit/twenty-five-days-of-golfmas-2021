@@ -21,7 +21,9 @@ func findCommonAndUncommonElements(polymerTemplate string) (mostCommon, leastCom
 	for _, count := range elementCount {
 		if count > mostCommon {
 			mostCommon = count
-		} else if count < leastCommon {
+		}
+
+		if count < leastCommon {
 			leastCommon = count
 		}
 	}

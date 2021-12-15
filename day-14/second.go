@@ -24,7 +24,9 @@ func findCommonAndUncommonElementsOnPairs(polyPairs map[string]int, firstElement
 	for _, count := range elementCount {
 		if count > mostCommon {
 			mostCommon = count
-		} else if count < leastCommon {
+		}
+
+		if count < leastCommon {
 			leastCommon = count
 		}
 	}
