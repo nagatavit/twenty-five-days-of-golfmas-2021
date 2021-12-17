@@ -9,8 +9,8 @@ import (
 )
 
 func readInput() (cavernMap [][]int) {
-	f, err := os.Open("example-input")
-	// f, err := os.Open("input")
+	// f, err := os.Open("example-input")
+	f, err := os.Open("input")
 	if err != nil {
 		log.Fatal(err)
 	}
